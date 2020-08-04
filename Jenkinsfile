@@ -19,7 +19,7 @@ pipeline {
               steps {
                   withAWS(region:'us-east-2',credentials:'c3') {
                   sh 'echo "Uploading content with AWS creds"'
-                      s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'udacity-projects3')
+                      s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'udacity-projects-3')
                   }
               }
          }
